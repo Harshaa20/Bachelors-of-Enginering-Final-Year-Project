@@ -1,0 +1,11 @@
+# Force MATLAB to be detected for all .m files
+*.m linguist-language=MATLAB
+*.m linguist-detectable=true
+
+# If you have live scripts (.mlx), include them too
+*.mlx linguist-language=MATLAB
+*.mlx linguist-detectable=true
+
+# HIDE other tools (Excel, Python, etc.) if they are winning by file size
+*.xlsx linguist-detectable=false
+*.py linguist-detectable=false
