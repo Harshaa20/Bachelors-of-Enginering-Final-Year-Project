@@ -1,2 +1,5 @@
 # Force
 GitHub
+
+*.m linguist-language=MATLAB
+*.m linguist-detectable=true
