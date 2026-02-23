@@ -1,21 +1,26 @@
-Design and Analysis of Boost Converter Using SiC MOSFET at High Duty Ratio
-
-This project focuses on the design, simulation, and hardware validation of a high-gain DC–DC boost converter operating at a very high duty ratio, with a comparative performance analysis between Silicon (Si) MOSFET and Silicon Carbide (SiC) MOSFET devices.
-
-The converter is designed to step up a low DC input (~20 V) to a high DC output (~800 V), targeting applications such as renewable energy systems, DC microgrids, and high-voltage DC buses. Detailed design calculations for duty cycle, inductor, capacitor, and load are carried out, followed by LTspice simulations using real device models.
-
-Key performance metrics including output voltage ripple, inductor current ripple, switching and conduction losses, device stress, and efficiency are evaluated for both Si and SiC implementations. Results clearly demonstrate that SiC MOSFETs significantly reduce losses and improve efficiency (≈91%) compared to conventional Si MOSFETs (≈75%), especially under high duty-cycle operation.
-
-A hardware prototype controlled using a PIC16F877A microcontroller is implemented to validate simulation results, confirming the feasibility of SiC-based converters for high-voltage, high-frequency power conversion.
-
-Tools & Technologies:
-
-LTspice (simulation)
-
-Si & SiC MOSFET device modeling
-
-PIC16F877A microcontroller
-
-Power electronics hardware testing
-
-📄 Full technical details, calculations, waveforms, and comparison results are documented in the project report.
+# High-Gain Boost Converter: SiC vs. Si MOSFET Analysis
+A comparative power electronics study on the design, simulation, and hardware validation of a high-efficiency DC–DC boost converter operating at high duty ratios.
+## Project Overview
+This project explores the performance gap between traditional Silicon (Si) and wide-bandgap Silicon Carbide (SiC) MOSFETs in high-gain applications. The system steps up a 20V DC input to an 800V DC output, targeting high-voltage DC buses for renewable energy and microgrid systems.
+## Objectives
+Design & Calculate: Determine optimal values for the inductor, capacitor, and duty cycle for extreme voltage gain.
+Comparative Simulation: Analyze switching/conduction losses and efficiency using real-world device models in LTspice.
+Hardware Validation: Build and test a physical prototype to verify simulation accuracy and device feasibility.
+## Tools & Technologies
+Simulation: LTspice (Detailed device modeling)
+Control: Microchip PIC16F877A Microcontroller
+Hardware: Si & SiC MOSFETs, Power Electronics lab testing equipment
+Metrics: Output/Inductor ripple, Device Stress, and System Efficiency
+## Methodology
+Mathematical Design: Comprehensive calculations for duty cycle and passive components.
+LTspice Modeling: Simulated the circuit using authentic Si and SiC MOSFET parameters to predict thermal and electrical behavior.
+Efficiency Analysis: Evaluated switching and conduction losses specifically under high duty-cycle stress.
+Prototyping: Implemented a hardware version controlled by a PIC16F877A to validate the theoretical model.
+## Key Results & Comparison
+The analysis revealed a significant performance leap when utilizing Silicon Carbide technology:
+SiC MOSFET Efficiency: ~91%
+Silicon (Si) MOSFET Efficiency: ~75%
+Reduced Losses: SiC devices showed drastically lower switching losses and better thermal stability during high-frequency operation.
+Voltage Gain: Successfully achieved the 20V to 800V step-up, confirming the viability of SiC for high-voltage DC buses.
+## Conclusion
+The project confirms that SiC MOSFETs are superior for high-frequency, high-voltage applications. While traditional Silicon components struggle with losses at high duty cycles, SiC provides the thermal and electrical efficiency required for modern renewable energy infrastructure.
